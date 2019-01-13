@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+html {
+    min-height: 100vh;
+    width: 100%;
+    background: url(bgc.jpeg) no-repeat center;
+    background-size: cover;
+}
+
+
+.keys {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.key {
+    border: 1px solid black;
+    margin: 5px;
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    text-shadow: 0 0 15px black;
+    -webkit-box-shadow: 0 0 15px black;
+    box-shadow: 0 0 15px black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transition: all .1s;
+    transition: all .1s;
+    cursor: pointer;
+}
+
+.playing {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    border-color: #ffc600;
+    -webkit-box-shadow: 0 0 15px #ffc600;
+    box-shadow: 0 0 15px #ffc600;
+}
+
+kbd {
+    display: block;
+    font-size: 40px;
+}
+
+.sound {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffc600;
+    font-weight: bold;
+}
+
+@media(min-width: 1024px) {
+    .key {
+        width: 120px;
+        height: 120px;
+        margin: 15px;
+    }
+
+    kbd {
+        font-size: 55px;
+    }
+
+    .sound {
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #ffc600;
+        font-weight: bold;
+    }
+}
